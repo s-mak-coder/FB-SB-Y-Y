@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		@font-face {
+		font-family: 'Stag Sans Web';
+		src:url('css/fonts/StagSansBookWeb.woff') format('woff'),
+		url('css/fonts/StagSansBookWeb.ttf') format('truetype');
+		
+		font-weight:  400;
+		font-style:   normal;
+		font-stretch: normal;}
+
+		@font-face {
+		font-family: 'Stag Sans Web';
+		src: url('css/fonts/StagSansSemiboldWeb.eot');
+		src: url('css/fonts/StagSansSemiboldWeb.eot?#iefix') format('embedded-opentype'),
+		 url('css/fonts/StagSansSemiboldWeb.woff') format('woff'),
+		 url('css/fonts/StagSansSemiboldWeb.ttf') format('truetype');
+		font-weight:  600;
+		font-style:   normal;
+		font-stretch: normal;}
+
+		@font-face {
+		font-family: 'Stag Sans Web';
+		src: url('css/fonts/StagSansLightWeb.eot');
+		src: url('css/fonts/StagSansLightWeb.eot?#iefix') format('embedded-opentype'),
+		url('css/fonts/StagSansLightWeb.woff') format('woff'),
+		url('css/fonts/StagSansLightWeb.ttf') format('truetype');
+		font-weight:  300;
+		font-style:   normal;
+		font-stretch: normal;}
+
+		@font-face {
+		font-family: 'Stag Sans Medium';
+		src: url('css/fonts/StagSansMedium.otf') format('opentype');
+		font-weight:  400;
+		font-style:   normal;
+		font-stretch: normal;}
+
+		@font-face {
+		
+		
+		 font-family: 'SoupofJustice';
+		src: url('css/fonts/soupofjustice.woff2') format('woff2'),
+         url('css/fonts/soupofjustice.woff') format('woff');
+		font-weight: normal;
+		font-style: normal;
+		
+		
+		}
+		
+		@font-face {
+		font-family: 'mmAsap';
+		src:url('css/fonts/mmAsap-Bold.otf') format('opentype');
+		font-weight:  700;
+		font-style:   normal;
+		font-stretch: normal;}
+		
+		
+		
+		@font-face {
+		font-family: 'Sassoon';
+		src:url('css/fonts/mmSassoonPrimary-Medium.otf') format('opentype');
+		font-weight:  400;
+		font-style:   normal;
+		font-stretch: normal;}
+		
+		@font-face {
+		font-family: 'CFAsty';
+		src:url('css/fonts/CFAstyStd-Book_0.woff') format('woff');
+		font-weight:  400;
+		font-style:   normal;
+		font-stretch: normal;}
+		
+		@font-face {
+		font-family: 'CFAsty';
+		src:url('css/fonts/CFAstyStd-Medium_0.woff') format('woff');
+		font-weight:  300;
+		font-style:   normal;
+		font-stretch: normal;}
+		
+		
+		
+	</style>
+	
+	<script src="js/jquery.js"></script>	
+	<script src="js/MainMenu.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/MainMenu.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf-8">	
+</head>
+<body>
+<div class="IWB secondary loading">
+
+	<div class="loadingGif">
+		<div class="loader" id="loader-1">
+			<div class="loadingText">Loading</div>
+		</div>
+
+	
+	</div>
+	<div class="intro">
+		<img src="Images/Main/intro.jpg"/>
+		<audio><source src="Audio/Intro.mp3" type="audio/mpeg"></audio>
+
+	</div>
+
+	
+	<div class="main" id="main">
+	
+	
+		<div class="levelWrapper">
+			<div class="slideshow">
+				<img src="Images/Main/main.jpg"/>			
+			</div>	
+			<div class="logoImg">
+				<img src="Images/Main/logoMain.png"/>
+			</div>
+		</div>
+		
+		<div class="mainButtons firstLevel">
+		
+			<div class="mainCol" style="margin-left:20px;">
+			<div class="mainBtn mainNormal " data-secondtarget="SB">
+				<div class="mainTitle">
+				<svg x="0px" y="0px" width="38px" height="34px" >
+					<path d="M35.46,12.988l0.055,2.423c-0.051,0.04-0.098,0.085-0.139,0.137c0,0-12.404,14.988-13.246,16.006
+					c-1.23-0.396-17.667-5.65-18.252-5.836c-1.164-1.415-1.58-2.748-1.58-3.904c0-1.368,0.553-2.486,1.033-3.201l17.915,5.824
+					c0.406,0.134,0.854,0.004,1.125-0.326L36.622,6.939c0.227-0.274,0.299-0.646,0.191-0.984c-0.107-0.338-0.381-0.6-0.725-0.692
+					L17.392,0.227c-0.384-0.102-0.792,0.021-1.055,0.319L2.087,16.673c-0.093,0.104-0.155,0.227-0.199,0.355
+					c-1.603,2.109-3.003,6.174,0.567,10.269c0.125,0.144,0.287,0.252,0.47,0.309l19.242,6.153c0.406,0.129,0.852-0.003,1.123-0.33
+					l12.65-15.285l0,0c0,0,1.918-1.719,1.838-3.119S35.46,12.988,35.46,12.988 M15.04,8.552l3.797-4.32l10.34,2.88l-3.664,4.451
+					L15.04,8.552z"/>
+				</svg>
+				<span>Student's Book</span>
+				</div>
+			</div>
+			
+			
+			</div>
+			<div class="mainCol" style="margin-left:-40px;">
+			<div class="mainBtn mainInv " data-type='VC'>
+				<div class="mainTitle">
+				<svg width="30px" height="32px">
+					<g>
+						<polygon points="21.854,29.834 24.713,31.732 24.713,20.854 19.083,20.854 19.083,31.732 	"/>
+						<path d="M12.269,6.735h-0.053c0,0-0.195,0.71-0.305,0.966l-1.146,2.687h2.194L12.38,7.701
+							C12.344,7.505,12.269,6.735,12.269,6.735z"/>
+						<path d="M20.363,8.304c-0.87,0-1.254,0.742-1.182,2.251c0.068,1.464,0.506,2.25,1.348,2.25
+							c0.584,0,0.975-0.425,1.205-0.89l-0.26-2.688C21.255,8.712,20.797,8.304,20.363,8.304z"/>
+						<path d="M29.729,18.451c0.253-0.334,0.334-0.764,0.223-1.168L26.24,2.439c-0.36-1.284-1.532-2.171-2.865-2.171
+							H7.999c-1.313,0-2.458,0.867-2.847,2.159c-0.256,0.847-4.597,17.1-4.822,17.885C0.135,20.986,0,21.523,0,22.389
+							c0,2.918,1.858,5.291,4.142,5.291h23.663c1.039,0,1.883-0.844,1.883-1.883H4.142c-1.224,0-2.259-1.561-2.259-3.408
+							c0-1.85,1.035-3.41,2.259-3.41h24.524C29.083,18.979,29.477,18.783,29.729,18.451z M15.533,14.542h-0.697
+							c-0.459,0-0.805-0.077-0.871-0.318l-0.51-1.843h-3.59l-0.88,1.843c-0.113,0.227-0.397,0.318-0.777,0.318H7.573
+							c-0.666,0-0.943-0.12-0.902-0.335c0.014-0.074,0.063-0.164,0.114-0.27l4.658-9.708c0.107-0.241,0.396-0.317,0.763-0.317h0.662
+							c0.369,0,0.642,0.076,0.7,0.317l2.718,9.708c0.027,0.105,0.043,0.195,0.043,0.27C16.328,14.421,16.09,14.542,15.533,14.542z
+							 M22.715,14.525c-0.508,0-0.604-0.634-0.734-1.025c-0.299,0.647-1.033,1.133-2.019,1.133c-1.716,0-2.974-1.451-2.981-4.077
+							c-0.009-2.462,0.93-4.062,2.655-4.062c0.82,0,1.538,0.619,1.827,1.043l0.008-0.334c0.008-0.316-0.035-0.62,0.531-0.62h0.379
+							c0.565,0,0.833,0.168,0.877,0.484l0.669,4.786c0.217,1.555,0.448,1.872,0.493,2.189C24.473,14.405,23.11,14.525,22.715,14.525z"/>
+					</g>
+				</svg>
+				<span>Vocabulary List</span>
+				</div>
+			</div>
+			
+			<!-- <div class="mainBtn mainInv " data-secondtarget="GA"> -->
+				<!-- <div class="mainTitle"> -->
+				<!-- <svg width="43px" height="34px" viewBox="0 0 43 34" style="bottom:15px;"> -->
+					<!-- <g> -->
+						<!-- <path  d="M12.14,7.29c0.906,1.35,4.346,1.185,6.273,1.368c0.789,0.075,1.369-0.04,1.746,0.758 -->
+							<!-- c0.17,0.359,0.164,1.49,0.164,1.835l-1.559-0.003c-0.246,0.001-0.443,0.414-0.443,0.923c0.002,0.508,0.203,0.919,0.449,0.919 -->
+							<!-- l5.18-0.017c0.246,0,0.445-0.413,0.443-0.922c-0.002-0.508-0.201-0.919-0.449-0.919c0,0-1.195,0.018-1.721,0.005 -->
+							<!-- c-0.023-0.835-0.02-1.897-0.467-2.752c-0.674-1.292-2.16-1.349-3.613-1.451c-0.73-0.052-4.697-0.111-4.869-1.015 -->
+							<!-- c-0.027-0.208-0.109-1.054-0.152-1.829c-0.049-0.888-0.158-3.392-0.16-3.862c-0.408-0.448-1.236-0.417-1.557-0.031 -->
+							<!-- c0.023,0.79,0.039,2.426,0.107,3.932C11.571,5.472,11.565,6.438,12.14,7.29z"/> -->
+						<!-- <ellipse  cx="21.499" cy="18.713" rx="1.447" ry="1.483"/> -->
+						<!-- <path  d="M33.175,13.584c-0.451-0.09-0.92-0.139-1.4-0.139H9.444c-1.912,0-3.648,0.76-4.92,1.993 -->
+							<!-- c-2.611,1.851-4.316,4.898-4.316,8.346C0.208,29.427,4.774,34,10.407,34c3.363,0,6.346-1.63,8.205-4.143h5.775 -->
+							<!-- C26.247,32.37,29.229,34,32.591,34c5.633,0,10.201-4.573,10.201-10.216C42.792,18.339,38.538,13.89,33.175,13.584z M10.03,27.099 -->
+							<!-- l-0.896-0.894l-0.877,0.877c-0.785,0.783-2.002,0.834-2.721,0.119c-0.719-0.719-0.666-1.935,0.117-2.718l0.879-0.876l-0.895-0.893 -->
+							<!-- c-0.719-0.718-0.666-1.934,0.117-2.716s2.002-0.835,2.721-0.117l0.895,0.893l0.887-0.886c0.783-0.782,2-0.834,2.721-0.116 -->
+							<!-- c0.717,0.717,0.666,1.932-0.119,2.715l-0.887,0.885l0.895,0.896c0.719,0.715,0.666,1.931-0.117,2.714 -->
+							<!-- C11.966,27.763,10.747,27.816,10.03,27.099z M23.843,24.638c0,1.317-1.047,2.385-2.344,2.385c-1.295,0-2.342-1.067-2.342-2.385 -->
+							<!-- v-5.569c0-1.316,1.047-2.385,2.342-2.385c1.297,0,2.344,1.068,2.344,2.385V24.638z M29.733,28.211 -->
+							<!-- c-0.996,0-1.803-0.786-1.803-1.756s0.807-1.756,1.803-1.756s1.803,0.786,1.803,1.756S30.729,28.211,29.733,28.211z M29.733,21.418 -->
+							<!-- c-0.996,0-1.803-0.786-1.803-1.755c0-0.971,0.807-1.757,1.803-1.757s1.803,0.786,1.803,1.757 -->
+							<!-- C31.536,20.632,30.729,21.418,29.733,21.418z M36.894,28.211c-0.994,0-1.803-0.786-1.803-1.756s0.809-1.756,1.803-1.756 -->
+							<!-- s1.801,0.786,1.801,1.756S37.888,28.211,36.894,28.211z M36.894,21.418c-0.994,0-1.803-0.786-1.803-1.755 -->
+							<!-- c0-0.971,0.809-1.757,1.803-1.757s1.801,0.786,1.801,1.757C38.694,20.632,37.888,21.418,36.894,21.418z"/> -->
+						<!-- <ellipse  cx="21.499" cy="24.972" rx="1.447" ry="1.483"/> -->
+					<!-- </g> -->
+				<!-- </svg> -->
+				<!-- <span>Games</span> -->
+				<!-- </div> -->
+
+			<!-- </div> -->
+			
+			
+			
+			
+			
+			
+			
+			
+		
+		</div>
+				</div>
+
+		<div class="secondLevel mainSecondLevel">
+			<div data-second="SB">
+				<div class="secondLevelHeader">
+					<svg x="0px" y="0px" width="38px" height="34px" viewbox="0 0 38 34">
+					<path d="M35.46,12.988l0.055,2.423c-0.051,0.04-0.098,0.085-0.139,0.137c0,0-12.404,14.988-13.246,16.006
+					c-1.23-0.396-17.667-5.65-18.252-5.836c-1.164-1.415-1.58-2.748-1.58-3.904c0-1.368,0.553-2.486,1.033-3.201l17.915,5.824
+					c0.406,0.134,0.854,0.004,1.125-0.326L36.622,6.939c0.227-0.274,0.299-0.646,0.191-0.984c-0.107-0.338-0.381-0.6-0.725-0.692
+					L17.392,0.227c-0.384-0.102-0.792,0.021-1.055,0.319L2.087,16.673c-0.093,0.104-0.155,0.227-0.199,0.355
+					c-1.603,2.109-3.003,6.174,0.567,10.269c0.125,0.144,0.287,0.252,0.47,0.309l19.242,6.153c0.406,0.129,0.852-0.003,1.123-0.33
+					l12.65-15.285l0,0c0,0,1.918-1.719,1.838-3.119S35.46,12.988,35.46,12.988 M15.04,8.552l3.797-4.32l10.34,2.88l-3.664,4.451
+					L15.04,8.552z"/>
+				</svg><span>Student's Book</span>
+				</div>
+				
+				<div class="secondMore">
+				
+				</div>
+				<div class="secondButtonWrapper" >
+					
+					
+				
+					<div class="secondButton " data-secondmodule="Module 1">
+						<div class="secondModuleButton">
+							<div class="secondTitle">Module</div>
+								<div class="secondSub">1</div>
+							</div>
+							<div class="secondImages">	
+								<div class="secondButton ">
+									<div class="secondModuleButton" data-gotoframe="1">
+										<div class="secondTitle">Lesson a</div>
+									</div>
+								</div>
+								
+								
+								
+								<div class="secondButton ">
+									<div class="secondExtraButton" data-gotoframe="2">
+										<div class="secondTitle" style="padding-top:47px !important;">Interactive Activity</div>
+									</div>
+								</div>
+								
+									
+							</div>						
+						
+					</div>
+					
+					<div class="secondButton " data-secondmodule="Module 2">
+						<div class="secondModuleButton">
+							<div class="secondTitle">Module</div>
+							<div class="secondSub">2</div>
+						</div>
+							<div class="secondImages">							
+								<div class="secondButton "><div class="secondModuleButton" data-gotoframe="3">
+									<div class="secondTitle">Lesson a</div>
+								</div></div>
+								<div class="secondButton "><div class="secondModuleButton" data-gotoframe="4">
+									<div class="secondTitle">Lesson b</div>
+								</div></div>
+									
+								<div class="secondButton "><div class="secondModuleButton" data-gotoframe="5">
+									<div class="secondTitle" style="padding-top:60px !important;">Culture Page</div>
+								</div></div>
+								<div class="secondButton ">
+									<div class="secondExtraButton" data-gotoframe="6">
+										<div class="secondTitle" style="padding-top:47px !important;">Interactive Activity</div>
+									</div>
+								</div>
+							</div>	
+						
+					</div>				
+					
+					<div class="secondButton " data-secondmodule="Module 3">
+						<div class="secondModuleButton ">
+							<div class="secondTitle">Module</div>
+							<div class="secondSub">3</div>
+						</div>
+						<div class="secondImages">							
+							<div class="secondButton "><div class="secondModuleButton" data-gotoframe="7">
+								<div class="secondTitle">Lesson a</div>
+							</div></div>
+							<div class="secondButton "><div class="secondModuleButton" data-gotoframe="8">
+								<div class="secondTitle">Task</div>
+							</div></div>
+							
+							<div class="secondButton ">
+									<div class="secondExtraButton" data-gotoframe="9">
+										<div class="secondTitle" style="padding-top:47px !important;">Interactive Activity</div>
+									</div>
+								</div>
+								
+						</div>	
+					
+					</div>
+					
+					
+					<div class="secondButton " data-secondmodule="Module 4">
+						<div class="secondModuleButton ">
+							<div class="secondTitle">Module</div>
+							<div class="secondSub">4</div>
+						</div>
+						<div class="secondImages">							
+							
+							<div class="secondButton "><div class="secondModuleButton" data-gotoframe="10">
+								<div class="secondTitle">Lesson b</div>
+							</div></div>
+							
+							<div class="secondButton "><div class="secondModuleButton" data-gotoframe="11">
+									<div class="secondTitle" style="padding-top:60px !important;">Culture Page</div>
+								</div></div>
+							
+							<div class="secondButton ">
+									<div class="secondExtraButton" data-gotoframe="12">
+										<div class="secondTitle" style="padding-top:47px !important;">Interactive Activity</div>
+									</div>
+								</div>
+						</div>	
+					</div>
+					
+					<div style="clear:both;"></div>
+					
+					<div class="secondButton " data-secondmodule="Module 5">
+						<div class="secondModuleButton ">
+							<div class="secondTitle">Module</div>
+							<div class="secondSub">5</div>
+						</div>		
+
+						<div class="secondImages">							
+							<div class="secondButton "><div class="secondModuleButton" data-gotoframe="13">
+								<div class="secondTitle">Lesson a</div>
+							</div></div>
+							
+							
+							
+								<div class="secondButton ">
+									<div class="secondExtraButton" data-gotoframe="14">
+										<div class="secondTitle" style="padding-top:47px !important;">Interactive Activity</div>
+									</div>
+								</div>							
+						</div>						
+					</div>
+					
+					<div class="secondButton " data-secondmodule="Module 6">
+						<div class="secondModuleButton ">
+							<div class="secondTitle">Module</div>
+							<div class="secondSub">6</div>
+						</div>
+
+						<div class="secondImages">
+							
+							<div class="secondButton "><div class="secondModuleButton" data-gotoframe="15">
+								<div class="secondTitle">Lesson b</div>
+							</div></div>
+							
+							<div class="secondButton "><div class="secondModuleButton" data-gotoframe="16">
+								<div class="secondTitle" style="padding-top:60px !important;">Culture Page</div>
+							</div></div>
+							
+							<div class="secondButton ">
+									<div class="secondExtraButton" data-gotoframe="17">
+										<div class="secondTitle" style="padding-top:47px !important;">Interactive Activity</div>
+									</div>
+								</div>
+						</div>
+					</div>	
+					
+					<div class="secondButton " data-secondmodule="Module 7">
+						<div class="secondModuleButton ">
+							<div class="secondTitle">Module</div>
+							<div class="secondSub">7</div>
+						</div>	
+						<div class="secondImages">							
+							<div class="secondButton "><div class="secondModuleButton" data-gotoframe="18">
+								<div class="secondTitle">Lesson a</div>
+							</div></div>
+							<div class="secondButton "><div class="secondModuleButton" data-gotoframe="19">
+								<div class="secondTitle">Lesson b</div>
+							</div></div>
+							
+							<div class="secondButton ">
+									<div class="secondExtraButton" data-gotoframe="20">
+										<div class="secondTitle" style="padding-top:47px !important;">Interactive Activity</div>
+									</div>
+								</div>
+								
+						</div>
+					</div>
+					
+					<div class="secondButton " data-secondmodule="Module 8">
+						<div class="secondModuleButton ">
+							<div class="secondTitle">Module</div>
+							<div class="secondSub">8</div>
+						</div>	
+						<div class="secondImages">							
+							<div class="secondButton "><div class="secondModuleButton" data-gotoframe="21">
+								<div class="secondTitle">Lesson a</div>
+							</div></div>
+							<div class="secondButton "><div class="secondModuleButton" data-gotoframe="22">
+								<div class="secondTitle">Lesson b</div>
+							</div></div>
+							<div class="secondButton "><div class="secondModuleButton" data-gotoframe="23">
+								<div class="secondTitle" style="padding-top:60px !important;">Culture Page</div>
+							</div></div>
+							
+							<div class="secondButton ">
+									<div class="secondExtraButton" data-gotoframe="24">
+										<div class="secondTitle" style="padding-top:47px !important;">Interactive Activity</div>
+									</div>
+								</div>
+						</div>
+					</div>
+					
+					
+					
+
+					
+					
+					
+					
+					
+					
+				</div>		
+			</div>
+			
+			
+			
+			
+			
+			<!-- <div data-second="GA"> -->
+				<!-- <div class="secondLevelHeader"> -->
+						<!-- <svg width="43px" height="34px" viewBox="0 0 43 34" style="bottom:15px;"> -->
+					<!-- <g> -->
+						<!-- <path  d="M12.14,7.29c0.906,1.35,4.346,1.185,6.273,1.368c0.789,0.075,1.369-0.04,1.746,0.758 -->
+							<!-- c0.17,0.359,0.164,1.49,0.164,1.835l-1.559-0.003c-0.246,0.001-0.443,0.414-0.443,0.923c0.002,0.508,0.203,0.919,0.449,0.919 -->
+							<!-- l5.18-0.017c0.246,0,0.445-0.413,0.443-0.922c-0.002-0.508-0.201-0.919-0.449-0.919c0,0-1.195,0.018-1.721,0.005 -->
+							<!-- c-0.023-0.835-0.02-1.897-0.467-2.752c-0.674-1.292-2.16-1.349-3.613-1.451c-0.73-0.052-4.697-0.111-4.869-1.015 -->
+							<!-- c-0.027-0.208-0.109-1.054-0.152-1.829c-0.049-0.888-0.158-3.392-0.16-3.862c-0.408-0.448-1.236-0.417-1.557-0.031 -->
+							<!-- c0.023,0.79,0.039,2.426,0.107,3.932C11.571,5.472,11.565,6.438,12.14,7.29z"/> -->
+						<!-- <ellipse  cx="21.499" cy="18.713" rx="1.447" ry="1.483"/> -->
+						<!-- <path  d="M33.175,13.584c-0.451-0.09-0.92-0.139-1.4-0.139H9.444c-1.912,0-3.648,0.76-4.92,1.993 -->
+							<!-- c-2.611,1.851-4.316,4.898-4.316,8.346C0.208,29.427,4.774,34,10.407,34c3.363,0,6.346-1.63,8.205-4.143h5.775 -->
+							<!-- C26.247,32.37,29.229,34,32.591,34c5.633,0,10.201-4.573,10.201-10.216C42.792,18.339,38.538,13.89,33.175,13.584z M10.03,27.099 -->
+							<!-- l-0.896-0.894l-0.877,0.877c-0.785,0.783-2.002,0.834-2.721,0.119c-0.719-0.719-0.666-1.935,0.117-2.718l0.879-0.876l-0.895-0.893 -->
+							<!-- c-0.719-0.718-0.666-1.934,0.117-2.716s2.002-0.835,2.721-0.117l0.895,0.893l0.887-0.886c0.783-0.782,2-0.834,2.721-0.116 -->
+							<!-- c0.717,0.717,0.666,1.932-0.119,2.715l-0.887,0.885l0.895,0.896c0.719,0.715,0.666,1.931-0.117,2.714 -->
+							<!-- C11.966,27.763,10.747,27.816,10.03,27.099z M23.843,24.638c0,1.317-1.047,2.385-2.344,2.385c-1.295,0-2.342-1.067-2.342-2.385 -->
+							<!-- v-5.569c0-1.316,1.047-2.385,2.342-2.385c1.297,0,2.344,1.068,2.344,2.385V24.638z M29.733,28.211 -->
+							<!-- c-0.996,0-1.803-0.786-1.803-1.756s0.807-1.756,1.803-1.756s1.803,0.786,1.803,1.756S30.729,28.211,29.733,28.211z M29.733,21.418 -->
+							<!-- c-0.996,0-1.803-0.786-1.803-1.755c0-0.971,0.807-1.757,1.803-1.757s1.803,0.786,1.803,1.757 -->
+							<!-- C31.536,20.632,30.729,21.418,29.733,21.418z M36.894,28.211c-0.994,0-1.803-0.786-1.803-1.756s0.809-1.756,1.803-1.756 -->
+							<!-- s1.801,0.786,1.801,1.756S37.888,28.211,36.894,28.211z M36.894,21.418c-0.994,0-1.803-0.786-1.803-1.755 -->
+							<!-- c0-0.971,0.809-1.757,1.803-1.757s1.801,0.786,1.801,1.757C38.694,20.632,37.888,21.418,36.894,21.418z"/> -->
+						<!-- <ellipse  cx="21.499" cy="24.972" rx="1.447" ry="1.483"/> -->
+					<!-- </g> -->
+				<!-- </svg><span>Games</span> -->
+				<!-- </div> -->
+				<!-- <div class="gamesTiles"> -->
+				
+					<!-- <div data-gamemodule="1" style="margin-left:66px;"> -->
+						<!-- <div class="gamesHeader"><span>Module</span> 1</div> -->
+						<!-- <div class="gamesBody"> -->
+								<!-- <div data-game="BoardBattle">Board <br/>Battle</div>					 -->
+						<!-- </div> -->
+					<!-- </div> -->
+					<!-- <div data-gamemodule="2"> -->
+							<!-- <div class="gamesHeader"><span>Module</span> 2</div> -->
+							<!-- <div class="gamesBody"> -->
+								<!-- <div data-game="HiddenCode">Hidden<br/>Code</div> -->
+						<!-- </div> -->
+					<!-- </div> -->
+					<!-- <div data-gamemodule="3"> -->
+							<!-- <div class="gamesHeader"><span>Module</span> 3</div> -->
+							<!-- <div class="gamesBody"> -->
+								<!-- <div data-game="BoardBattle">Board<br/>Battle</div> -->
+						<!-- </div> -->
+					<!-- </div> -->
+					<!-- <div data-gamemodule="4"> -->
+							<!-- <div class="gamesHeader"><span>Module</span> 4</div> -->
+							<!-- <div class="gamesBody"> -->
+								<!-- <div data-game="SwitchAndWin">Switch<br/>and win</div> -->
+						<!-- </div> -->
+					<!-- </div> -->
+					<!-- <div style="clear:both"></div> -->
+					<!-- <div data-gamemodule="5" style="margin-left:66px;"> -->
+							<!-- <div class="gamesHeader"><span>Module</span> 5</div> -->
+							<!-- <div class="gamesBody"> -->
+								<!-- <div data-game="SwitchAndWin">Switch<br/>and win</div> -->
+						<!-- </div> -->
+					<!-- </div> -->
+					<!-- <div data-gamemodule="6"> -->
+							<!-- <div class="gamesHeader"><span>Module</span> 6</div> -->
+							<!-- <div class="gamesBody"> -->
+								<!-- <div data-game="HiddenCode">Hidden<br/>Code</div> -->
+						<!-- </div> -->
+					<!-- </div> -->
+					<!-- <div data-gamemodule="7"> -->
+							<!-- <div class="gamesHeader"><span>Module</span> 7</div> -->
+							<!-- <div class="gamesBody"> -->
+								<!-- <div data-game="TypeAndWin">Type<br/>and win</div> -->
+						<!-- </div> -->
+					<!-- </div> -->
+					<!-- <div data-gamemodule="8"> -->
+							<!-- <div class="gamesHeader"><span>Module</span> 8</div> -->
+							<!-- <div class="gamesBody"> -->
+								<!-- <div data-game="BoardBattle">Board <br/>Battle</div> -->
+						<!-- </div> -->
+					<!-- </div> -->
+				<!-- </div> -->
+		
+			<!-- </div> -->
+			
+			
+			
+
+			
+			
+			
+			
+			
+			
+			<div class="secondBack">
+				<svg width="40px" height="40px" viewBox="0 0 40 40" class="secondBackbtn ">
+
+					<circle fill="white" cx="20" cy="20" r="19.5"></circle>
+					<path fill="gray" d="M13.372,16.936L23.407,6.901c0.526-0.526,1.378-0.526,1.904,0c0.523,0.526,0.523,1.377,0,1.904L15.056,19.062
+						l10.256,10.257c0.263,0.264,0.395,0.606,0.395,0.952c0,0.344-0.132,0.688-0.395,0.952c-0.525,0.525-1.377,0.525-1.903,0
+						L13.374,21.188l-2.08-2.126L13.372,16.936z"></path>
+					
+				</svg>
+			
+			</div>
+		
+		
+		
+		
+		
+		</div>
+		
+		
+	
+	
+	
+	
+	
+	</div>
+	
+	<div class="videoWrapper">
+		<div class="videoContainer">
+			<video>
+			  <source type="video/mp4">		  
+			</video>
+			
+			
+		</div>
+		<div class="subs"><div class="subsSpan"></div></div>
+		<div class="extraInfoVideo">
+			<div class="extraInfoCenterVideo">
+				<div class="playBtnWrapper videoPlayBtn videoPause">
+						<svg width="40px" height="40px" viewBox="0 0 25 25">
+							<circle fill="transparent" cx="12.5" cy="12.5" r="12"  stroke="#FFFFFF" stroke-width="1" />
+							<g class="gPlay">			
+							
+							<path fill="white" d="M8.868,7.648c0-0.641,0.434-0.87,0.963-0.509l8.608,5.071c0.529,0.36,0.529,0.95,0,1.312l-8.608,5.07
+								c-0.529,0.36-0.962,0.132-0.962-0.508L8.868,7.648z"/>
+							</g>
+							<g class="gPause">
+								<path fill="white" d="M11.511,17.028c0,0.344-0.28,0.623-0.623,0.623H8.884c-0.343,0-0.623-0.279-0.623-0.623V7.944
+								c0-0.343,0.28-0.623,0.623-0.623h2.004c0.342,0,0.623,0.28,0.623,0.623V17.028z"/>
+								<path fill="white" d="M16.487,17.028c0,0.344-0.28,0.623-0.623,0.623H13.86c-0.343,0-0.623-0.279-0.623-0.623V7.944
+								c0-0.343,0.28-0.623,0.623-0.623h2.004c0.343,0,0.623,0.28,0.623,0.623V17.028z"/>
+							</g>
+						</svg>
+					</div>
+					<div class="videoBarWrapper">
+						<div class="videoTimer">00:00</div>
+						<div class="videoBar">				
+							<div class="videobarRed"></div>											
+						</div>
+					</div>
+					<div class="playBtnWrapper videostopBtn">
+						<svg width="40px" height="40px" viewBox="0 0 25 25" >	
+							<circle fill="transparent" cx="12.5" cy="12.5" r="12"  stroke="#FFFFFF" stroke-width="1"/>
+							
+							<path fill="white" d="M17.375,16.785c0,0.324-0.266,0.592-0.592,0.592H8.217c-0.326,0-0.592-0.268-0.592-0.592V8.217
+								c0-0.326,0.266-0.592,0.592-0.592h8.566c0.326,0,0.592,0.266,0.592,0.592V16.785z"/>
+						</svg>
+					</div>
+					<div class="subsOn">
+						<svg width="40px" height="40px" viewBox="0 0 32 32" >
+							<circle fill="transparent" stroke="#FFFFFF" cx="16" cy="16" r="15.5"/>
+							<g fill="#FFFFFF">
+								<path d="M23.141,24.823h-0.205c-0.517,0-0.93-0.105-1.033-0.413l-1.522-4.234h-7.588l-1.473,4.234
+								c-0.103,0.308-0.513,0.413-1.032,0.413h-0.129c-0.773,0-1.11-0.156-1.11-0.44c0-0.101,0.026-0.205,0.078-0.359l6.119-16.96
+								c0.103-0.309,0.517-0.412,1.031-0.412h0.75c0.518,0,0.928,0.104,1.033,0.412l6.117,16.985c0.053,0.13,0.076,0.234,0.076,0.335
+								C24.252,24.643,23.914,24.823,23.141,24.823z M19.684,18.216l-2.709-7.694l-0.338-1.498l-0.414,1.498l-2.711,7.694H19.684z"/>
+								<polygon  points="1.864,23.152 29.21,6.557 30.56,8.715 3.214,25.311 	"/>
+							</g>
+						</svg>
+						
+						
+					
+					
+					</div>
+					<div class="clVideo">
+						<svg width="40px" height="40px" viewBox="0 -5 35 35" class="closeVideo">
+							<circle fill="transparent" stroke="#FFFFFF" cx="17.5" cy="12.5" r="17" />
+							<path fill="white" d="M18.915,12.499l6.686-6.685c0.352-0.351,0.352-0.918,0-1.269c-0.176-0.175-0.404-0.263-0.633-0.263
+								c-0.23,0-0.459,0.088-0.635,0.263l-6.834,6.833l-6.832-6.833c-0.352-0.349-0.918-0.349-1.27,0c-0.35,0.351-0.35,0.919,0,1.269
+								l6.686,6.687l-6.686,6.685c-0.35,0.351-0.35,0.918,0,1.269c0.176,0.175,0.406,0.263,0.635,0.263c0.23,0,0.457-0.088,0.635-0.263
+								l6.832-6.833l6.834,6.833c0.35,0.349,0.918,0.349,1.268,0c0.352-0.351,0.352-0.919,0-1.269L18.915,12.499z"/>
+
+						</svg>
+					
+					</div>
+				</div>
+			</div>
+			
+	</div>
+	
+	<div class="mainOptions">		
+				<a href="http://www.mmpublications.com/" target="_blank">
+				<svg width="100px" height="50px" viewBox="0 0 100 50" >
+					<g>
+						<path fill="#FF0000" d="M48.455,18.076c0.014-4.09,3.332-7.435,7.424-7.435c4.104,0,7.43,3.325,7.43,7.427v14.719
+							c-1.814-2.057-4.472-3.357-7.43-3.357c-2.955,0-5.609,1.301-7.424,3.354V18.076z M45.989,18.076v14.708
+							c-1.813-2.053-4.469-3.354-7.426-3.354c-2.958,0-5.612,1.301-7.426,3.357V18.068c0-4.102,3.324-7.427,7.426-7.427
+							C42.656,10.641,45.975,13.986,45.989,18.076 M48.682,37.404c0.818-3.215,3.73-5.592,7.197-5.592c3.47,0,6.378,2.359,7.194,5.572
+							c0.137,0.613,0.669,1.053,1.323,1.053c0.76,0,1.375-0.615,1.375-1.375V18.108c0-5.432-4.437-9.851-9.893-9.851
+							c-3.721,0-6.969,2.06-8.656,5.095c-1.688-3.035-4.937-5.095-8.659-5.095c-5.454,0-9.89,4.419-9.89,9.851v18.955
+							c0,0.76,0.6,1.375,1.359,1.375c0.643,0,1.181-0.439,1.333-1.033c0.817-3.215,3.729-5.592,7.197-5.592s6.382,2.377,7.2,5.592
+							c0.211,0.602,0.774,1.033,1.451,1.033C47.893,38.438,48.466,38.004,48.682,37.404"/>
+					</g>
+					<rect x="-0.135" y="0" fill="none" width="100" height="50"/>
+				</svg>
+			</a>
+				
+				
+				
+				
+				
+				<div style="clear:both;"></div>
+			</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		</div>
+</div>	
+</body>
+</html>
